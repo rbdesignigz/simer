@@ -1,0 +1,1258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins:wght@300&display=swap');
+
+.desc_estrellas{
+    font-size: normal;
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+    padding-top: 10px;
+    color: white;
+}
+
+/*inicio animación ping*/
+@keyframes ping {
+    75%, 100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+.animate-ping {
+    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+/*fin animación ping*/
+
+/*animación imagenes*/
+@keyframes show{
+    from{
+        opacity: .6; scale:80%;
+    }
+    to {
+        opacity: 1; scale:100%;
+    }
+}
+
+/*animación para ingles*/
+.box-0001, .box-0002, .box-0003, .box-0004, .box-0005, .box-0006, .box-0007, .box-0008, .box-0009, .box-0010, .box-0011, .box-0012{
+    view-timeline-name: --reveal;
+
+    animation-name: show;
+    animation-fill-mode: both;
+
+    animation-timeline: --reveal;
+    animation-range: entry 25% cover 50%;
+}
+/*animación para español*/
+.box-01, .box-02, .box-1,.box-2,.box-3, .box-4, .box-5, .box-6, .box-7, .box-8, .box-9, .box-10{
+    view-timeline-name: --reveal;
+
+    animation-name: show;
+    animation-fill-mode: both;
+
+    animation-timeline: --reveal;
+    animation-range: entry 25% cover 50%;
+}
+/*fin animación imagenes*/
+
+
+    /* Estilos para el banner */
+    .banner {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        /* background-color: #b61414; */
+        background: linear-gradient(
+            217deg,
+            rgba(24, 1, 231, 0.8),
+            rgba(8, 11, 201, 0) 95%
+          ),
+          linear-gradient(127deg, rgba(255, 0, 0, 0.8), rgba(0, 255, 0, 0) 100%),
+          linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 95%);
+
+
+        color: #fff;
+        font-weight: 700;
+        
+        padding: 20px;
+        text-align: center;
+        z-index: 9999;
+        animation: slideInFromBottom 1.3s ease-in-out;
+        /*filter: blur(10px);*/
+      }
+
+      .stacked-linear {
+        background: linear-gradient(
+            217deg,
+            rgba(255, 0, 0, 0.8),
+            rgba(255, 0, 0, 0) 70.71%
+          ),
+          linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+          linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+      }
+  
+      @keyframes slideInFromBottom {
+        0% {
+          transform: translateY(100%);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+      /* Estilos para el banner */
+
+/* styles.css */
+.review-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: white;
+  }
+  
+  .rating a {
+    text-decoration: none;
+  }
+  
+  .rating i {
+    font-size: 24px;
+    color: gold;
+    cursor: pointer;
+  }
+  
+  .rating i:hover,
+  .rating i:hover ~ i {
+    color: white;
+  }
+
+
+.iconosfooter{
+    
+    text-decoration: white;
+    background-color: #000000;
+    
+    color: #ffffff;
+    display:flex;
+    
+    justify-content: center;
+}
+
+.iconosfooter a{
+    
+    text-decoration: white;
+    background-color: #000000;
+    
+    color: #ffffff;
+    display:flex;
+    padding: 20px 20px;
+    justify-content: center;
+}
+
+/* #iconosfooter  i {
+    font-size: 50px;
+    padding: 0 20px;
+    color:#f3f3f3;
+    display: flex;
+    background-color: #000000;
+} */
+
+.head1 {
+    z-index: 60;
+    margin-top: -40px;
+}
+
+.pportada{
+    height: 100vh;
+
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.combos{
+    align-items: center;
+    margin: 20px;
+}
+
+.lognav{
+
+    z-index: 150;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*NAVBAR*//*NAVBAR*//*NAVBAR*//*NAVBAR*//*NAVBAR*/
+
+#navbar{
+    flex-direction: column;
+    position: absolute;
+    padding: 20px;
+    display: flex;
+    
+
+    
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#navbar{
+    font-family: 'Poppins', sans-serif;
+}
+
+#navbar a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.nav-links a{
+    font-size: 1.1rem;
+}
+
+#navbar .logo{
+    font-size: 2.05rem;
+    font-family: 'Poppins', sans-serif;
+    z-index: 150;
+}
+
+#navbar .nav-links ul{
+    display: flex;
+}
+
+#navbar .nav-links ul li{
+    margin: 0 15px;
+}
+
+#navbar .nav-links ul .separador{
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+#navbar .menu-hamburger{
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 25px;
+}
+
+#navbar .menu-bandera{
+    display: none;
+    position: absolute;
+    top: 24px;
+    right: 60px;
+    width: 33px;
+}
+
+#navbar .nav-links .bandera{
+    width: 25px;
+    margin-right: 5px;
+}
+
+
+
+#navbar .lognav{
+    height: 1.6rem;
+    position: absolute;
+    top: 25px;
+    left: 30px;
+}
+
+#navbar .logo{
+    position: absolute;
+    top: 14px;
+    left: 60px;
+    z-index: 150;
+}
+
+/*start seccion promos*/
+
+#promos{
+    display:flex;
+    background-color: #6b6969;
+
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+
+#imgpr {
+ scale: 90%;
+ color: #ca1b1b;
+}
+
+.titlpr{
+    background-color:  #ca1b1b;  /* #007bff;  #dc3545  */
+    color: #FFF;
+    width: 350px;
+    padding-top: 20px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+}
+
+.btnpr{
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.ppr{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.pro_card{
+    background-color: #ffffff;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 10px;
+    margin: 20px;
+    height: 430px;
+    width: 370px;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+/*end seccion promos*/
+
+.flechadest{
+    /*position: absolute;
+    margin-left: 47%;
+    top: 700px;
+    background-color: #333;*/
+    text-decoration: none;
+    color: #ffffff;
+    display:flex;
+    margin: -50px;
+    justify-content: center;
+    
+
+}
+
+#btnpr{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+.nav-links{
+    width: 100%;
+    right: auto;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+@media screen and (max-width: 720px) {
+
+    #navbar{
+        padding: 0;
+    }
+
+    #navbar .logo{
+        position: absolute;
+        top: 14px;
+        left: 60px;
+        z-index: 150;
+    }
+    .lognav{
+       
+        z-index: 150;
+    }
+
+
+
+    #navbar .menu-hamburger{
+        display: block;
+        z-index: 150;
+    }
+
+    #navbar .menu-bandera{
+        display: block;
+        z-index: 150;
+    }
+
+    .nav-links a{
+        font-size: 1.3rem;
+        z-index: 150;
+    }
+
+    .nav-links{
+        top: 0;
+        left: 0;
+        position: absolute;
+        /*background-color: rgba(172, 169, 169, 0.4);*/
+        /*background-color: rgba(255, 255, 255, 0.30);*/
+        -webkit-backdrop-filter: blur(7px); /*Esta linea y la de abajo van igual, la de arriba es para ios*/
+        backdrop-filter: blur(25px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+        z-index: 150;
+    }
+
+    .nav-links.mobile-menu{
+        margin-left: 0;
+        z-index: 90;
+    }
+
+
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        align-items:left;
+
+    }
+
+    #navbar .nav-links ul li{
+        margin: 5px 0;
+        font-size: 1.3em;
+    }
+
+    #navbar .nav-links .bandera{
+        width: 35px;
+        height: 32px;
+        margin-right: 5px;
+    }
+
+    #navbar .nav-links .separador{
+        visibility:hidden;
+    }
+}
+
+/*SPAN-IDIOMA*//*SPAN-IDIOMA*//*SPAN-IDIOMA*//*SPAN-IDIOMA*//*SPAN-IDIOMA*/
+
+#navbar .bandera{
+    border: 50%;
+    height: 1.2rem;
+    width: 2rem;
+}
+
+
+
+/*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*/
+
+header{
+    height: 100vh;
+    background-size: cover;
+    /*background-image: url(img/fondo2.jpg); */ /*imagen de fondo*/
+
+}
+
+/* header .titulo{
+    // color: white;    --esto tiene que ser comentario
+    // font-family: 'Poppins', sans-serif;  --esto tiene que ser comentario
+
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+header .titulo h1{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    padding: 180px 12px;
+    height: 80vh;
+}
+
+/*NUESTROS-PROGRAMAS*//*NUESTROS-PROGRAMAS*//*NUESTROS-PROGRAMAS*/
+
+
+
+#nuestros-programas{
+    font-family: 'Poppins', sans-serif;
+    /*margin-top: 15px; */
+    /*padding-top:15px;*/
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: .2s linear;
+    background-color: #000000;
+}
+
+#nuestros-programas2{
+   background-color: #000000;
+    /*padding:5px;*/
+    /*margin-top: 50px;*/
+    /*padding-top: 15px;*/
+
+}
+
+#nuestros-programas .heading{
+    text-align: center;
+    background-color: #000000;
+    padding-bottom: 15px;
+    color:#ffffff;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 40px;
+}
+
+#nuestros-programas .box-container{
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap:15px;
+    max-width: 1200px;
+    margin: auto;
+    z-index: 8000;
+}
+
+#carouselExampleSlidesOnly{
+    z-index: 40;
+    max-width: 1200px;
+}
+
+#nuestros-programas .modal-footer a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/*box en español-----------------------------------------------------------------------------*/
+#nuestros-programas .box-container .box-01{
+    background-color: #000000;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    height: 220px;
+    border-radius: 5px;
+    background-image:url(img/esp/cat.arg\ 1280x720-340kb.png);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding:10px 10px;
+    transition: transform 0.6s ease;
+}
+
+
+#nuestros-programas .box-container .box-02{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    height: 220px;
+    background-image: url(img/esp/simer\ ato\ iguazu\ a\ hotel\ 720kb\ jpg.jpg);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding:10px 20px;
+    transition: transform 0.6s ease;
+}
+
+#nuestros-programas .box-container .box-1{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    height: 220px;
+    background-image:url(img/esp/simer\ cataratas\ brasil\ 720kb\ jpg.jpg);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding:60px 20px;
+    transition: transform 0.6s ease;
+}
+
+#nuestros-programas .box-container .box-2{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    height: 220px;
+    background-image:url(img/esp/aer-br.jpg);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding:60px 20px;
+    transition: transform 0.6s ease;
+}
+
+#nuestros-programas .box-container .box-3{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    height: 220px;
+    background-image:url(img/esp/gran\ aven\ 1280x720-342kb.png);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding:60px 20px;
+    transition: transform 0.6s ease;
+}
+
+#nuestros-programas .box-container .box-4{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    height: 220px;
+    background-image:url(img/esp/parq\ das\ av\ 1280x720-\ 352kb.png);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding:60px 20px;
+    transition: transform 0.6s ease;
+}
+
+#nuestros-programas .box-container .box-5{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    height: 220px;
+    background-image:url(img/esp/helisul\ 1280x720-\ 347kb.png);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding:60px 20px;
+    transition: transform 0.6s ease;
+}
+
+#nuestros-programas .box-container .box-6{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    height: 220px;
+    background-image:url(img/esp/compras\ py\ 1280x720-\ 349kb.png);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding:60px 20px;
+    transition: transform 0.6s ease;
+}
+
+#nuestros-programas .box-container .box-7{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    height: 220px;
+    background-image:url(img/esp/itaipu\ 1280x720-\ 342kb.png);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding:60px 20px;
+    transition: transform 0.6s ease;
+}
+
+#nuestros-programas .box-container .box-8{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    height: 220px;
+    background-image:url(img/esp/minas\ w.\ 1280x720-\ 346kb.png);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding:60px 20px;
+    transition: transform 0.6s ease;
+}
+
+#nuestros-programas .box-container .box-9{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    height: 220px;
+    background-image:url(img/esp/rafain\ 1280x720-\ 378kb.png);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding:60px 20px;
+    transition: transform 0.6s ease;
+}
+
+#nuestros-programas .box-container .box-10{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    height: 220px;
+    background-image:url(img/esp/ruinas\ s.ign\ 1280x720-\ 326kb.png);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding:60px 2px;
+    transition: transform 0.6s ease;
+}
+
+
+/*box en ingles-------------------------------------------------------------------------------------*/
+#nuestros-programas .box-container .box-0001{
+    background-color: #000000;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    height: 220px;
+    border-radius: 5px;
+    background-image:url(img/eng/cat-ar.png);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding:10px 10px;
+    transition: transform 0.6s ease;
+}
+
+#nuestros-programas .box-container .box-0002{
+    background-color: #000000;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    height: 220px;
+    border-radius: 5px;
+    background-image:url(img/eng/aer-ar-hotel.png);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding:10px 10px;
+    transition: transform 0.6s ease;
+}
+
+#nuestros-programas .box-container .box-0003{
+    background-color: #000000;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    height: 220px;
+    border-radius: 5px;
+    background-image:url(img/eng/cat-br.png);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding:10px 10px;
+    transition: transform 0.6s ease;
+}
+
+#nuestros-programas .box-container .box-0004{
+    background-color: #000000;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    height: 220px;
+    border-radius: 5px;
+    background-image:url(img/eng/aer-foz.png);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding:10px 10px;
+    transition: transform 0.6s ease;
+}
+
+#nuestros-programas .box-container .box-0005{
+    background-color: #000000;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    height: 220px;
+    border-radius: 5px;
+    background-image:url(img/eng/gran-avent.png);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding:10px 10px;
+    transition: transform 0.6s ease;
+}
+
+#nuestros-programas .box-container .box-0006{
+    background-color: #000000;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    height: 220px;
+    border-radius: 5px;
+    background-image:url(img/eng/parque-aves.png);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding:10px 10px;
+    transition: transform 0.6s ease;
+}
+
+#nuestros-programas .box-container .box-0007{
+    background-color: #000000;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    height: 220px;
+    border-radius: 5px;
+    background-image:url(img/eng/helicoptero-br.png);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding:10px 10px;
+    transition: transform 0.6s ease;
+}
+
+#nuestros-programas .box-container .box-0008{
+    background-color: #000000;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    height: 220px;
+    border-radius: 5px;
+    background-image:url(img/eng/comp-py.png);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding:10px 10px;
+    transition: transform 0.6s ease;
+}
+
+#nuestros-programas .box-container .box-0009{
+    background-color: #000000;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    height: 220px;
+    border-radius: 5px;
+    background-image:url(img/eng/represa-itaipu.png);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding:10px 10px;
+    transition: transform 0.6s ease;
+}
+
+#nuestros-programas .box-container .box-0010{
+    background-color: #000000;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    height: 220px;
+    border-radius: 5px;
+    background-image:url(img/eng/minas-wanda.png);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding:10px 10px;
+    transition: transform 0.6s ease;
+}
+
+#nuestros-programas .box-container .box-0011{
+    background-color: #000000;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    height: 220px;
+    border-radius: 5px;
+    background-image:url(img/eng/rafain.png);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding:10px 10px;
+    transition: transform 0.6s ease;
+}
+
+#nuestros-programas .box-container .box-0012{
+    background-color: #000000;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    height: 220px;
+    border-radius: 5px;
+    background-image:url(img/eng/ruinas-san.png);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding:10px 10px;
+    transition: transform 0.6s ease;
+}
+
+
+
+/*fin box en ingles-------------------------------------------------------------------------------------*/
+
+
+
+#nuestros-programas .box-container .box-01 h3{
+    color:#fff;
+    font-size: 22px;
+    padding:10px 0;
+    padding-top: 20px;
+}
+
+#nuestros-programas .box-container .box-02 h3{
+    color:#fff;
+    font-size: 22px;
+    padding:10px 0;
+}
+
+#nuestros-programas .box-container .box-1 h3{
+    color:#fff;
+    font-size: 22px;
+    padding:10px 0;
+}
+
+#nuestros-programas .box-container .box-2 h3{
+    color:#fff;
+    font-size: 22px;
+    padding:10px 0;
+}
+
+#nuestros-programas .box-container .box-3 h3{
+    color:#fff;
+    font-size: 22px;
+    padding:10px 0;
+}
+
+#nuestros-programas .box-container .box-4 h3{
+    color:#fff;
+    font-size: 22px;
+    padding:10px 0;
+}
+
+#nuestros-programas .box-container .box-5 h3{
+    color:#fff;
+    font-size: 22px;
+    padding:10px 0;
+}
+
+#nuestros-programas .box-container .box-6 h3{
+    color:#fff;
+    font-size: 22px;
+    padding:10px 0;
+}
+
+#nuestros-programas .box-container .box-7 h3{
+    color:#fff;
+    font-size: 22px;
+    padding:10px 0;
+}
+
+#nuestros-programas .box-container .box-8 h3{
+    color:#fff;
+    font-size: 22px;
+    padding:10px 0;
+}
+
+#nuestros-programas .box-container .box-9 h3{
+    color:#fff;
+    font-size: 22px;
+    padding:10px 0;
+}
+
+#nuestros-programas .box-container .box-10 h3{
+    color:#fff;
+    font-size: 22px;
+    padding:10px 0;
+}
+
+
+#nuestros-programas .box-container .box-01 button{
+
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 25px;
+}
+
+#nuestros-programas .box-container .box-02 button{
+
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 25px;
+}
+
+
+#nuestros-programas .box-container .box-1 button{
+
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 25px;
+}
+
+
+#nuestros-programas .box-container .box-2 button{
+
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 25px;
+}
+
+#nuestros-programas .box-container .box-3 button{
+
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 25px;
+}
+
+#nuestros-programas .box-container .box-4 button{
+
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 25px;
+}
+
+#nuestros-programas .box-container .box-5 button{
+
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 25px;
+}
+
+#nuestros-programas .box-container .box-6 button{
+
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 25px;
+}
+
+#nuestros-programas .box-container .box-7 button{
+
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 25px;
+}
+
+#nuestros-programas .box-container .box-8 button{
+
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 25px;
+}
+
+#nuestros-programas .box-container .box-9 button{
+
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 25px;
+}
+
+#nuestros-programas .box-container .box-10 button{
+
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 25px;
+}
+
+#nuestros-programas .box-container .box-01:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: translateY(-6px);
+}
+
+#nuestros-programas .box-container .box-02:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: translateY(-6px);
+}
+
+#nuestros-programas .box-container .box-1:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: translateY(-6px);
+}
+
+#nuestros-programas .box-container .box-2:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: translateY(-6px);
+}
+
+#nuestros-programas .box-container .box-3:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: translateY(-6px);
+}
+
+#nuestros-programas .box-container .box-4:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: translateY(-6px);
+}
+
+#nuestros-programas .box-container .box-5:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: translateY(-6px);
+}
+
+#nuestros-programas .box-container .box-6:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: translateY(-6px);
+}
+
+#nuestros-programas .box-container .box-7:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: translateY(-6px);
+}
+
+#nuestros-programas .box-container .box-8:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: translateY(-7px);
+}
+
+#nuestros-programas .box-container .box-9:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: translateY(-6px);
+}
+#nuestros-programas .box-container .box-10:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: translateY(-6px);
+}
+
+#nuestros-programas .box-container .modal-body .list-item{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px){
+    .container{
+        padding:20px;
+    }
+}
+
+/*VIAJE SEGURO*//*VIAJE SEGURO*//*VIAJE SEGURO*//*VIAJE SEGURO*/
+
+#viaje-seguro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 180px 12px;
+    background-image: url(img/viajeseguro.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 450px;
+}
+
+#viaje-seguro{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*PIE DE PAGINA*//*PIE DE PAGINA*//*PIE DE PAGINA*//*PIE DE PAGINA*/
+
+#pie-pagina{
+    width: 100%;
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+#pie-pagina > btnvolver{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#pie-pagina .grupo-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+
+#pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+#pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+#pie-pagina .grupo-2{
+    background-color: rgb(4, 4, 4);
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+#pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+#pie-pagina .bernidesign{
+    text-decoration: none;
+}
+
+@media screen and (max-width:720px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:5px;
+        padding: 15px 0px;
+    }
+
+    .header{
+        height: 100vh;
+        background-size: cover;
+        /*background-image: url(img/portada-new.png); */ /*imagen de fondo*/
+        background-color: #000000;
+    }
+
+
+
+}
+
+@media screen and (min-width:721px){
+
+    .head1{
+        display: none;
+    }
+    .head2{
+        display: none;
+    }
+}
+
+
+
+
+/*BOTON FLOTANTE*//*BOTON FLOTANTE*//*BOTON FLOTANTE*//*BOTON FLOTANTE*/
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:20px;
+	right:20px;
+	background-color:#1ca74f;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 1px 1px 2px #999;
+    z-index:90;
+}
+
+.float:hover {
+text-decoration: none;
+color:#333;
+background-color:#2da85a;
+animation: shake 1s;
+animation-iteration-count: infinite;
+}
+
+.my-float{
+	margin-top:16px;
+}
