@@ -691,6 +691,90 @@ header .titulo h1{
     transition: transform 0.6s ease;
 }
 
+#nuestros-programas .box-container .box-11{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    height: 220px;
+    background-image:url(./img/2025/BR-Shopping.png);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding:60px 2px;
+    transition: transform 0.6s ease;
+}
+
+#nuestros-programas .box-container .box-12{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    height: 220px;
+    background-image:url(./img/2025/CityTour-igr.png);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding:60px 2px;
+    transition: transform 0.6s ease;
+}
+
+#nuestros-programas .box-container .box-13{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    height: 220px;
+    background-image:url(./img/2025/BR-Py.png);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding:60px 2px;
+    transition: transform 0.6s ease;
+}
+
+#nuestros-programas .box-container .box-14{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    height: 220px;
+    background-image:url(./img/2025/BR-Duty.png);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding:60px 2px;
+    transition: transform 0.6s ease;
+}
+
+#nuestros-programas .box-container .box-15{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    height: 220px;
+    background-image:url(./img/2025/BR-Cat-Br.png);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding:60px 2px;
+    transition: transform 0.6s ease;
+}
+
+#nuestros-programas .box-container .box-16{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    height: 220px;
+    background-image:url(./img/2025/BR-Cat-Arg.png);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding:60px 2px;
+    transition: transform 0.6s ease;
+}
+
+#nuestros-programas .box-container .box-17{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    height: 220px;
+    background-image:url(./img/2025/Feirinha.png);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding:60px 2px;
+    transition: transform 0.6s ease;
+}
+
 
 /*box en ingles-------------------------------------------------------------------------------------*/
 #nuestros-programas .box-container .box-0001{
