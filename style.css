@@ -756,6 +756,7 @@ header .titulo h1{
     border-radius: 5px;
     height: 220px;
     background-image:url(./img/2025/BR-Cat-Arg.avif);
+    background-size: cover;
     background-position: center center;
     text-align: center;
     padding:60px 2px;
