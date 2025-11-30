@@ -695,7 +695,7 @@ header .titulo h1{
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
     border-radius: 5px;
     height: 220px;
-    background-image:url(./img/2025/BR-Shopping.png);
+    background-image:url(./img/2025/BR-Shopping.avif);
     background-size: cover;
     background-position: center center;
     text-align: center;
@@ -707,7 +707,7 @@ header .titulo h1{
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
     border-radius: 5px;
     height: 220px;
-    background-image:url(./img/2025/CityTour-igr.png);
+    background-image:url(./img/2025/CityTour-igr.avif);
     background-size: cover;
     background-position: center center;
     text-align: center;
@@ -719,7 +719,7 @@ header .titulo h1{
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
     border-radius: 5px;
     height: 220px;
-    background-image:url(./img/2025/BR-Py.png);
+    background-image:url(./img/2025/BR-Py.avif);
     background-size: cover;
     background-position: center center;
     text-align: center;
@@ -731,7 +731,7 @@ header .titulo h1{
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
     border-radius: 5px;
     height: 220px;
-    background-image:url(./img/2025/BR-Duty.png);
+    background-image:url(./img/2025/BR-Duty.avif);
     background-size: cover;
     background-position: center center;
     text-align: center;
@@ -743,7 +743,7 @@ header .titulo h1{
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
     border-radius: 5px;
     height: 220px;
-    background-image:url(./img/2025/BR-Cat-Br.png);
+    background-image:url(./img/2025/BR-Cat-Br.avif);
     background-size: cover;
     background-position: center center;
     text-align: center;
@@ -755,8 +755,7 @@ header .titulo h1{
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
     border-radius: 5px;
     height: 220px;
-    background-image:url(./img/2025/BR-Cat-Arg.png);
-    background-size: cover;
+    background-image:url(./img/2025/BR-Cat-Arg.avif);
     background-position: center center;
     text-align: center;
     padding:60px 2px;
@@ -767,7 +766,7 @@ header .titulo h1{
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
     border-radius: 5px;
     height: 220px;
-    background-image:url(./img/2025/Feirinha.png);
+    background-image:url(./img/2025/Feirinha.avif);
     background-size: cover;
     background-position: center center;
     text-align: center;
